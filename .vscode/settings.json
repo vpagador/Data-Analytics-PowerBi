@@ -9,6 +9,26 @@
             "name": "powerbi-azure-database",
             "database": "orders-db",
             "username": "maya"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "pagila",
+            "database": "pagila",
+            "username": "postgres"
+        },
+        {
+            "previewLimit": 50,
+            "server": "aicore-db.c6jg8rvhomr6.eu-west-1.rds.amazonaws.com",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "username": "postgres",
+            "name": "aicore",
+            "database": "core_db"
         }
     ]
 }
