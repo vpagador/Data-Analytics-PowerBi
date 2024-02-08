@@ -1,3 +1,5 @@
+CREATE VIEW sales_by_store_type AS(
+
 WITH cte AS (SELECT 
         ROUND(SUM(dim_product.sale_price * orders.product_quantity)::numeric,2) AS total_sales,
         COUNT(orders.order_date_uuid) AS count_orders,
@@ -17,3 +19,4 @@ SELECT
     cte.count_orders,
     ROUND((cte.total_sales/(SELECT grand_total_sales FROM grand_total_sales))*100::numeric,2) AS perc_sales
    FROM cte
+)
