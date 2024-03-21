@@ -1,3 +1,5 @@
+--  Create a view where the rows are the store types and the columns are the total sales, 
+--  percentage of total sales and the count of orders
 CREATE VIEW sales_by_store_type AS(
 
 WITH cte AS (SELECT 
