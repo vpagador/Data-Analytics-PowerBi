@@ -1,3 +1,4 @@
+--- Which product category generated the most profit for in the Wiltshire, UK region in 2021?
 WITH cte AS (SELECT  dim_product.sale_price, 
         dim_product.cost_price,
         dim_product.category, 
